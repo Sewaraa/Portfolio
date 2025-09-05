@@ -4,7 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 const HeroSection = () => {
   return (
-    <section className='min-h-[70vh] flex flex-col items-center justify-center text-center px-4 bg-[#ffe6e6]'>
+    <section className='min-h-[70vh] flex flex-col items-center justify-center text-center px-4'>
         <motion.h1 className='text-3xl sm:text-5xl font-bold text-[#fe4c50] mb-4'
         initial={{opacity:0,x:50}}
         animate={{opacity:1,x:0}}
