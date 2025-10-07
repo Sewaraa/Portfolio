@@ -8,16 +8,16 @@ const Projects = () => {
       description:
         "An interactive educational game designed to help Adrian learns the alphabet, numbers, and basic family member names in a fun and engaging way. Built with React.js.",
       tech: ["React.js","javascript","css","ContextApi"],
-      liveUrl: "https://snakeadrian.netlify.app/",
+      liveUrl: "https://adrianundsnake.onrender.com/",
       githubUrl: "Private due to client confidentiality",
-      image: "/Adrian.jpg",
+      image: "/adrianshild.jpg",
     },
     {
       title: "Cryptopulsecoin",
       description:
         "A cryptocurrency tracking app that displays real-time prices and live updates for various coins. Built with a modern UI and powered by the CoinGecko API",
       tech: ["React.js", "CoinGecko API"],
-      liveUrl: " https://cryptopulsecoin.netlify.app/",
+      liveUrl: "https://mycryptopuls.onrender.com",
       githubUrl: "Private due to client confidentiality",
       image:"/coin.jpg",
     },
@@ -33,9 +33,10 @@ const Projects = () => {
   ];
   return (
     <section className="py-10 px-4">
-      <h2 className="text-3xl font-bold mb-10 text-gray-600 text-center">
-        My Projects
-      </h2>
+      <div className='mx-auto flex flex-col items-center justify-center pb-6 gap-1'>
+        <div className='text-gray-500 uppercase tracking-wide'>My recent Work</div>
+        <div className='font-bold text-2xl text-[#0c0c0c]'>Projects</div>
+      </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((pro)=>(
             <ProjectCard key={pro.title} project={pro}/>

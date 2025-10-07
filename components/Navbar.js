@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import Link from 'next/link'
 import React, { useState } from 'react'
 import {HiMenu,HiX} from 'react-icons/hi';
@@ -6,10 +7,21 @@ const Navbar = () => {
     const[menuOpen,setMenuOpen]=useState(false);
   const toggleMenu=()=>setMenuOpen(!menuOpen)
   return (
-    <header className='bg-white/80 backdrop-blur-md border-b border-[#fbd1d1] sticky top-0 z-50 shadow-sm'>
+    <header className='bg-gray-200/60 backdrop-blur-md border-b border-green-200 sticky top-0 z-50 shadow-sm'>
         <div className='max-w-7xl flex justify-between items-center mx-auto py-3 px-4'>
-        <Link href={'/'} className='text-[#fe4c50] tracking-wide font-bold text-xl '>
-        Portfolio
+        <Link href={'/'} className='flex items-center md:gap-4 gap-2 '>
+         <Image
+                    src="/sewar.jpg"
+                    alt="Sewar Alali"
+                    objectFit="cover"
+                    width={50}
+                    height={50}
+                    className="rounded-full shadow-md"
+                  />
+           <div>
+            <h1 className=' text-[#252525] tracking-wide font-bold text-xl '>Sewar AlAli</h1>
+            <div className='text-[#838383]'>Front-End Developer</div>
+            </div>      
         </Link>
         <nav className=" hidden md:flex items-center gap-6 text-gray-600 font-medium">
         
