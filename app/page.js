@@ -1,3 +1,4 @@
+'use client';
 import About from '@/components/About'
 import About11 from '@/components/About11'
 import CallToAction from '@/components/CallToAction'
