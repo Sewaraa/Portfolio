@@ -176,16 +176,19 @@ const Skills = () => {
       description: "Optimized data navigation",
     },
   ];
-  useEffect(()=>{
-    const updateCards = () => {
-    if (window.innerWidth < 768) setCardsToShow(4);
-    else setCardsToShow(8);
+ useEffect(() => {
+  const updateCards = () => {
+    if (typeof window !== "undefined") {
+      if (window.innerWidth < 768) setCardsToShow(4);
+      else setCardsToShow(8);
+    }
   };
   updateCards();
-  window.addEventListener("resize", updateCards);
-  return () => window.removeEventListener("resize", updateCards);
-    
-  },[])
+  if (typeof window !== "undefined") {
+    window.addEventListener("resize", updateCards);
+    return () => window.removeEventListener("resize", updateCards);
+  }
+}, []);
   const list=showall?skills:skills.slice(0,cardsToShow);
   return (
     <section className="min-h-[80vh] flex flex-col items-center justify-center px-6 pb-10">
