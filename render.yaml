@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: Portfolio
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
