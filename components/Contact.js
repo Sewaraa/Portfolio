@@ -8,8 +8,8 @@ const Contact = () => {
     {
       icon: <FaEnvelope className="text-red-500" />,
       label: "Email",
-      value: "alalisewar3@gmail.com",
-      href: "mailto:alalisewar3@gmail.com",
+      value: "sewar.alali.contact@gmail.com",
+      href: "mailto:sewar.alali.contact@gmail.com",
     },
     {
       icon: <FaWhatsapp className="text-green-500" />,
@@ -73,7 +73,7 @@ const Contact = () => {
         transition={{ delay: 0.8 }}
       >
         <a
-          href="mailto:alalisewar3@gmail.com"
+          href="mailto:sewar.alali.contact@gmail.com"
           className="inline-block bg-[#34D399] text-white px-8 py-3 rounded-full font-semibold shadow-md hover:bg-[#2eb485] transition"
         >
           Send Me a Message

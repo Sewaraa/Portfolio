@@ -11,12 +11,15 @@ const ProjectCard = ({ project }) => {
       
       {/* الصورة بنسبة ثابتة */}
       <div className="w-full aspect-[4/3] relative overflow-hidden ">
-        <Image
-          src={project.image}
-          alt={project.title}
-          fill
-          style={{ objectFit: 'cover' }}
-        />
+       <Image
+  src={project.image}
+  alt={project.title}
+  fill
+  quality={90}
+  placeholder="blur"
+  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQI12NgYGD4DwABBAEAaRT+OwAAAABJRU5ErkJggg=="
+  style={{ objectFit: 'cover' }}
+/>
       </div>
 
       {/* المحتوى */}
