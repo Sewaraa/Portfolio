@@ -4,15 +4,23 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   const projects = [
     {
-      title: "Adrian&Snake",
-      description:
-        "An interactive educational game designed to help Adrian learn the alphabet, numbers, and basic family member names in a fun and engaging way. Built with React.js.",
-      tech: ["React.js", "JavaScript", "CSS", "Context API"],
-      liveUrl: "https://adrianundsnake.onrender.com/",
-      githubUrl: "Private due to client confidentiality",
-      image: "/adrianshild.jpg",
+      title:"SmartLine",
+      description:"SmartLine is a corporate website I developed to showcase digital services with a modern, interactive experience. It features intuitive UI design, multi-language support, SEO optimization, and integrated contact forms.",
+      tech:["Nextjs","Tailwind Css"],
+      liveUrl:"https://fadi-zun4.onrender.com/en",
+      githubUrl:"Private due to client confidentiality",
+      image:"/smartline2-2.png"
     },
-    {
+     {
+      title: "FitTrack",
+      description:
+        "A fitness website that offers tailored workout plans and tracks exercises based on specific fitness goals or targeted muscle groups.",
+      tech: ["React.js", "Firebase Auth", "Firestore", "Redux", "Notifications"],
+      liveUrl: "https://fittrack-169b0.web.app/",
+      githubUrl: "Private due to client confidentiality",
+      image: "/fittrack.jpg",
+    },
+{
       title: "Cryptopulsecoin",
       description:
         "A cryptocurrency tracking app that displays real-time prices and live updates for various coins. Built with a modern UI and powered by the CoinGecko API.",
@@ -22,14 +30,16 @@ const Projects = () => {
       image: "/coin.jpg",
     },
     {
-      title: "FitTrack",
+      title: "Adrian&Snake",
       description:
-        "A fitness website that offers tailored workout plans and tracks exercises based on specific fitness goals or targeted muscle groups.",
-      tech: ["React.js", "Firebase Auth", "Firestore", "Redux", "Notifications"],
-      liveUrl: "https://fittrack-169b0.web.app/",
+        "An interactive educational game designed to help Adrian learn the alphabet, numbers, and basic family member names in a fun and engaging way. Built with React.js.",
+      tech: ["React.js", "JavaScript", "CSS", "Context API"],
+      liveUrl: "https://adrianundsnake.onrender.com/",
       githubUrl: "Private due to client confidentiality",
-      image: "/fittrack.jpg",
+      image: "/adrianshild.jpg",
     },
+    
+   
   ];
 
   const personalProjects = [

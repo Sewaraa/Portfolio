@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import {HiMenu,HiX} from 'react-icons/hi';
 const Navbar = () => {
     const[menuOpen,setMenuOpen]=useState(false);
-  const toggleMenu=()=>setMenuOpen(!menuOpen)
+    const toggleMenu=()=>setMenuOpen(!menuOpen)
   return (
     <header className='bg-gray-200/60 backdrop-blur-md border-b border-green-200 sticky top-0 z-50 shadow-sm'>
         <div className='max-w-7xl flex justify-between items-center mx-auto py-3 px-4'>

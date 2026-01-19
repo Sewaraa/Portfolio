@@ -34,7 +34,7 @@ const HeroSection = () => {
           <FaMapMarkerAlt className="text-2xl" />
         </motion.div>
         <div className="font-semibold text-lg text-[#34D399] tracking-wide">
-          Syria, Homs
+          Lebanon,Byblos
         </div>
       </div>
 

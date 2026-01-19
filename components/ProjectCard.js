@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
     <div className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col transition-transform hover:scale-[1.02]">
       
       {/* الصورة بنسبة ثابتة */}
-      <div className="w-full aspect-[4/3] relative overflow-hidden ">
+      <div className="w-full aspect-[4/3] relative overflow-hidden bg-black">
        <Image
   src={project.image}
   alt={project.title}

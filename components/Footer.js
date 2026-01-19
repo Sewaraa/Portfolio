@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="flex gap-4 text-xl">
    <a href="https://github.com/Sewaraa" target="_blank"><FaGithub/></a>
    <a href="https://linkedin.com/in/sewar-alali-4141b21b2" target="_blank"><FaLinkedin/></a>
-   <a href="sewar.alali.contact@gmail.com" ><FaEnvelope/></a>
+   <a  href="mailto:sewar.alali.contact@gmail.com" ><FaEnvelope/></a>
         </div>
       </div>
     </footer>
